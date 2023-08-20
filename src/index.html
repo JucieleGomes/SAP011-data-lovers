@@ -3,10 +3,33 @@
   <head>
     <meta charset="utf-8">
     <title>Data Lovers</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="home.css" />
   </head>
   <body>
+    <div class="container">
+      <div class="imagem-fundo"></div>
+      <img class="totoro" src="Imagens/totoro-peq.png" alt="Totoro">
+      <img class="studioGhibli" src="Imagens/logo.png" alt="Studio Ghibli">
+      <!-- <button class="botaoBuscar">Buscar</button> -->
+    </div>
+    <main>
+     <div class="containerBotoes">
+      <button class="botaoFilmes">Filmes</button> 
+      <button class="botaoSobre">Sobre</button>
+     </div>
+    </main>
+
     <div id="root"></div>
-    <script src="main.js" type="module"></script>
+    <script> 
+      const botaoFilmes = document.querySelector('.botaoFilmes')
+      botaoFilmes.addEventListener('click', function() {
+        window.location.href = 'filmografia.html';
+      });
+      
+      const botaoSobre = document.querySelector('.botaoSobre')
+      botaoSobre.addEventListener('click', function() {
+        window.location.href = 'sobre.html';
+      });</script>
+      
   </body>
 </html>

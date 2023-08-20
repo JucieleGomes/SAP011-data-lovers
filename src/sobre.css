@@ -1,0 +1,83 @@
+
+header {
+    background-color: #B4C2CD;
+    overflow: auto;
+    color: rgb(0, 0, 0);
+  }
+  
+  .cabecalhoFilmografia {
+    list-style: none;
+    display: flex;
+    padding: 0%;
+  }
+  
+  .containerCabecalho {
+    position: relative;
+  }
+  
+  .logo {
+    height: 200px;
+    width: 250px;
+    vertical-align: left;
+  }
+  
+  .sobreStudio {
+    font-family: Armata;
+    padding: 1px 20px 0 0;
+    margin-top: 180px;
+    display: flex;
+    font-size: 45px;
+  }
+  
+  .botaoFilmografia {
+    font-family: Armata;
+    padding: 1px 20px 0 20px;
+    display: inline-block;
+    margin: 0;
+    margin-right: 65px;
+    margin-left: 30px;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 40px ;
+    right: 50px;
+    font-size:40px; 
+  }
+  
+  .home {
+    font-family: Armata;
+    padding: 1px 20px 0 20px;
+    display: inline-block;
+    margin: 0;
+    margin-right: 65px;
+    margin-left: 30px;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 40px;
+    right: 170px;
+    font-size: 40px; 
+  }
+
+ 
+  
+  body {
+    background-color: #d5e0e8;
+  }
+  
+ 
+  .imagem-texto-container {
+    display: flex;
+    align-items: center; 
+    padding: 40px;
+    font-size: 30px;
+  }
+  
+  .imagem-texto-container img {
+    max-width: 650px; 
+    margin-right: 10px; 
+  }
+  
+  
+  
+  

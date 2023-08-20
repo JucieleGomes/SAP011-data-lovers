@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Studio Ghibli</title>
+    <link rel="stylesheet" href=style.css/>
+  </head>
+  <body>
+    <header>
+      <nav class="containerCabecalho"> <ol class="cabecalhoFilmografia">
+        <li><img class="logo" src="imagens/totoro-peq.png" alt="totoro"></li>
+        <li id="resultadoCalculo"></li>
+        <li class="filmografia">FILMOGRAFIA</li>
+        <li class="sobre"><button id="botaoSobre">SOBRE</button></li>
+        <li class="home"><button id="botaoHome">HOME</button></li>
+      </ol></nav>
+    </header>
+    <main>
+      <div>
+        <select id="ordenacaoSelecionada" name="Ordenação" class="ordenacao">
+          <option>Ordenar</option>
+        <option class="crescente" value="1984-2023">1984-2023</option>
+        <option class= "decrescente" value="2023-1984">2023-1984</option>
+      </select>
+        <select id="filtro" name="Filtro" class="filtro">
+        <option value="Filtro">Filtrar por Diretor</option>
+        <option value="Hayao Miyazaki">Hayao Miyazaki</option>
+        <option value="Isao Takahata">Isao Takahata</option>
+        <option value="Yoshifumi Kondo">Yoshifumi Kondo</option>
+        <option value="Goro Miyazaki">Goro Miyazaki</option>
+        <option value="Hiromasa Yonebayashi">Hiromasa Yonebayashi</option>
+        <option value="Hiroyuki Morita">Hiroyuki Morita</option>
+      </select>
+      <br>
+      <dialog>
+        <h2 id="tituloFilme"></h2>
+        <p id="sinopse"></p>
+        <p id="dataDeLancamento"></p>
+        <p id="diretor"></p>
+        <p id="nota"></p>
+        <button id="fechar">Fechar</button>
+      </dialog>
+      </div>
+      <div class="filmesContainer" class="titulosFilmes">
+      </div>
+    </main>
+    <div id="root"></div>
+    <script> 
+      const botaoHome = document.querySelector('.home')
+      botaoHome.addEventListener('click', function() {
+        window.location.href = 'index.html';
+      });
+      
+      const botaoSobre = document.querySelector('.sobre')
+      botaoSobre.addEventListener('click', function() {
+        window.location.href = 'sobre.html';
+      });</script>
+    <script src="main.js" type="module"></script>
+  </body>
+  <footer>
+  </footer>
+</html>
