@@ -1,81 +1,66 @@
+.container {
+  position: relative;
+  width: 800px;
+  height: 600px;
+  display: flex;
+}
 
-  
-  .container {
-    position: relative; 
-     width: 800px;
-    height: 600px;
-  } 
-  
-  .imagem-fundo {
-    position: absolute;
-    width: 167%;
-    height: 120%;
-    background: url("Imagens/nuvem.jpg") no-repeat center center;
-    background-size: cover;
-    /* opacity: 0.7; */
-  } 
-  
-  .totoro {
-    position: absolute;
-    left: -12px;
-    width: 660px;
-    height: 600px;
-  } 
-  
-  .studioGhibli {
-    position: absolute;
-    width: 450px;
-    height: 120px;
-    top: 470px;
-    left: 800px;
-  } 
+.imagem-fundo {
+  position: absolute;
+  width: 167%;
+  height: 120%;
+  background: url("Imagens/nuvem.jpg") no-repeat center center;
+  background-size: cover;
+}
 
-   .botaoBuscar{
-    width: 20%;
-    margin-top: 25px;
-    padding: 10px 20px;
-    font-size: 30px;
-    position: absolute;
-    left: 140%;
-    border: none;
-    background-color: rgb(135, 189, 189); 
-   }
+.totoro {
+  position: absolute;
+  left: -12px;
+  width: 660px;
+  height: 600px;
+}
 
+.studioGhibli {
+  position: absolute;
+  width: 450px;
+  height: 120px;
+  top: 470px;
+  left: 800px;
+}
 
+.botaoBuscar {
+  width: 20%;
+  margin-top: 25px;
+  padding: 10px 20px;
+  font-size: 30px;
+  position: absolute;
+  left: 140%;
+  border: none;
+  background-color: rgb(135, 189, 189);
+}
 
+.containerBotoes {
+  display: flex;
+}
 
-  .containerBotoes{
-    display: flex;  
-    /* Colocar os dois botões dentro de um container para deixar o display 
-    flex e possibilitar os dois ficarem um do lado do outro */
-  
-   } 
+.botaoSobre {
+  width: 8%;
+  margin-top: 5px;
+  margin-right: 7px;
+  padding: 10px 20px;
+  font-size: 30px;
+  position: relative;
+  left: 900px;
+  border: none;
+}
 
-  .botaoSobre{
-    width: 8%;
-    margin-top: 5px;
-    margin-right: 7px;
-    padding: 10px 20px;
-    font-size: 30px;
-    position: relative;
-    left: 900px;
-    border: none;
-  
-  }  
-  
-  .botaoFilmes{
-    width: 8%;
-    margin-top: 5px;
-    margin-right: 7px;
-    padding: 10px 20px;
-    font-size: 30px;
-    position: relative;
-    left: 900px; 
-    border: none; 
-  }   
-  
-  
-  
-  
-  
-  
+.botaoFilmes {
+  width: 8%;
+  margin-top: 5px;
+  margin-right: 7px;
+  padding: 10px 20px;
+  font-size: 30px;
+  position: relative;
+  left: 900px;
+  border: none;
+}

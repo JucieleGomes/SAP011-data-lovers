@@ -1,8 +1,5 @@
-import { mostrarPosterOrdenado,filtroDiretor, calculoAgregado } from './data.js';
-
+import { mostrarPosterOrdenado, filtroDiretor, calculoAgregado } from './data.js';
 import studio from './data/ghibli/ghibli.js';
-
-
 
 const poster = document.querySelector(".filmesContainer");
 const modal = document.querySelector("dialog");
@@ -13,7 +10,6 @@ const dataDeLancamento = document.getElementById('dataDeLancamento');
 const diretor = document.getElementById('diretor');
 const nota = document.getElementById("nota");
 
-
 function mostraPoster(films) {
   let posterFilme = document.createElement("img");
   posterFilme.src = films.poster;
@@ -21,27 +17,27 @@ function mostraPoster(films) {
   posterFilme.classList.add('filme-poster');
   poster.appendChild(posterFilme);
 
-
   posterFilme.addEventListener("click", function(evento) {
+    mostrarModal(films)
     modal.showModal()
   })
 
   botaoFechar.onclick = function() {
-    modal.close() 
+    modal.close();
   }
-  return posterFilme;     
-};
-
-function mostrarModal(films) {
-  tituloFilme.innerHTML = films.title
-  sinopse.innerHTML =`synopsis: ${ films.description}`;
-  dataDeLancamento.innerHTML =`Release date: ${films.release_date}`;
-  diretor.innerHTML =`Directed by: ${films.director}`;
-  nota.innerHTML =`Rating: ${films.rt_score}`;
+  return posterFilme;
 }
 
-for (let i=0; i <studio.films.length; i++) {
-mostraPoster(studio.films[i],); mostrarModal(studio.films[i]);
+function mostrarModal(films) {
+  tituloFilme.innerHTML = films.title;
+  sinopse.innerHTML = `synopsis: ${films.description}`;
+  dataDeLancamento.innerHTML = `Release date: ${films.release_date}`;
+  diretor.innerHTML = `Directed by: ${films.director}`;
+  nota.innerHTML = `Rating: ${films.rt_score}`;
+}
+
+for (let i = 0; i < studio.films.length; i++) {
+  mostraPoster(studio.films[i]);
 }
 
 function limparTela(films) {
@@ -52,34 +48,23 @@ function limparTela(films) {
     mostraPoster(film, indice);
   }
 }
+
 const ordenacaoSelecionada = document.getElementById("ordenacaoSelecionada");
 const listaDeFilmes = studio.films;
 
 ordenacaoSelecionada.addEventListener("change", function() {
-  const ordenacaoAlterada = mostrarPosterOrdenado(ordenacaoSelecionada.value, listaDeFilmes); 
+  const ordenacaoAlterada = mostrarPosterOrdenado(ordenacaoSelecionada.value, listaDeFilmes);
   limparTela(ordenacaoAlterada);
 });
 
 const resultadoCalculo = document.getElementById("resultadoCalculo");
 const filtroSelecionado = document.getElementById("filtro");
+const filmografia = document.getElementById("filmografia");
 
 filtroSelecionado.addEventListener("change", function() {
-const filtroAlterado = filtroDiretor(listaDeFilmes, filtroSelecionado.value); 
-const resultado = calculoAgregado(listaDeFilmes, filtroAlterado);
-resultadoCalculo.textContent = `${resultado} % dos filmes do studio ghibli foram dirigidos por este diretor`
-limparTela(filtroAlterado);
+  const filtroAlterado = filtroDiretor(listaDeFilmes, filtroSelecionado.value);
+  const resultado = calculoAgregado(listaDeFilmes, filtroAlterado);
+  const nomeDiretor = filtroSelecionado.value;
+  resultadoCalculo.textContent = `${resultado} % dos filmes do Studio Ghibli foram dirigidos por`;
+  filmografia.textContent = `${nomeDiretor}`;
 });
-
-
-
-  //TITULO FILME  <figure> ( p = <figcaption> )
-    // const filmes = document.querySelector(".filmesContainer");
-  // let tituloFilme = document.createElement("p");
-  // tituloFilme.innerHTML = "Filme: " + film.title;
-  // filmes.appendChild(tituloFilme);
-  // filmes.classList.add('titulo-filmes');
-  // console.log(film.title);
-
-
-
-  
