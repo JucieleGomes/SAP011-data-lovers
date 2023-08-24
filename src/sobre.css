@@ -58,7 +58,7 @@ header {
   padding: 15px 20px;
   border-radius: 5px;
   border: none;
-  margin-left: 320px;
+  margin-left: 100px;
 }
 
 #botaoFilmografia:hover {
@@ -80,6 +80,7 @@ header {
   padding: 15px 20px;
   border-radius: 5px;
   border: none;
+  margin-right: 10px;
 }
 
 #botaoHome:hover {
@@ -129,6 +130,12 @@ body {
   margin-right: 10px; 
 }
 
+footer{
+  background-color: #B4C2CD;
+  padding: 20px;
+}
+
+
 @media (max-width: 750px) {
 
   #sobreStudioGhibli{
@@ -157,7 +164,7 @@ body {
   #botaoFilmografia{
       font-size: 12px;
       padding: 10px 15px;
-      margin-left: -100px;
+      margin-left: -80px;
   }
 
   .imagem-texto-container {
@@ -170,7 +177,14 @@ body {
   
   .imagem-texto-container img {
     max-width: 400px; 
-    margin-left: 50px;
+    margin-left: 10px;
+  }
+
+  footer{
+    background-color: #B4C2CD;
+    padding: 20px;
+    width: 100%
   }
 
 }
+

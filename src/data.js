@@ -57,4 +57,9 @@ function calculoAgregado(listaDeFilmes, filtroAlterado) {
   return calculo;
 }
 
-export { mostrarPosterOrdenado, filtroDiretor, calculoAgregado };
+function buscaPorFilme(listaDeFilmes, texto) {
+  return listaDeFilmes.filter(filme => filme.title.toLowerCase() === texto.toLowerCase());
+}
+
+export { mostrarPosterOrdenado, filtroDiretor, calculoAgregado,buscaPorFilme };
+

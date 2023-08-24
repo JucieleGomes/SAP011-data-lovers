@@ -105,17 +105,19 @@
   }
 
   .containerBotoes {
-    flex-direction: column;
-    align-items: center;
-    margin-top: 20px;
+    flex-direction: row;
+    /* align-items: center; */
+    /* margin-top: 20px; */
+    margin-left: -800px;
    } 
   
   .botaoSobre,
   .botaoFilmes {
-    width: 100%; 
-    font-size: 20px;
-    margin: 5px 0;
-  } 
+    width: 150px; 
+    font-size: 25px;
+    margin-top: 750px;
+    border-bottom: 1px solid grey ;
+  }  
 
 }
 

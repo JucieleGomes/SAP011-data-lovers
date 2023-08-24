@@ -1,4 +1,4 @@
-import { mostrarPosterOrdenado, filtroDiretor, calculoAgregado } from './data.js';
+import { mostrarPosterOrdenado, filtroDiretor, calculoAgregado, buscaPorFilme } from './data.js';
 import studio from './data/ghibli/ghibli.js';
 
 const poster = document.querySelector(".filmesContainer");
@@ -10,11 +10,27 @@ const dataDeLancamento = document.getElementById('dataDeLancamento');
 const diretor = document.getElementById('diretor');
 const nota = document.getElementById("nota");
 
+
+// function mostraPoster(films) {
+//   let posterFilme = document.createElement("img");
+//   posterFilme.src = films.poster;
+//   posterFilme.title = films.title;
+//   posterFilme.classList.add('filme-poster');
+//   poster.appendChild(posterFilme);
 function mostraPoster(films) {
-  let posterFilme = document.createElement("img");
-  posterFilme.src = films.poster;
-  posterFilme.title = films.title;
-  posterFilme.classList.add('filme-poster');
+  let posterFilme = document.createElement("figure"); 
+  posterFilme.classList.add('filme-container'); 
+
+  let posterImg = document.createElement("img");
+  posterImg.src = films.poster;
+  posterImg.classList.add('filme-poster');
+  posterFilme.appendChild(posterImg);
+
+  let titulo = document.createElement("figcaption");
+  titulo.textContent = films.title;
+  titulo.classList.add('filme-titulo'); 
+  posterFilme.appendChild(titulo);
+
   poster.appendChild(posterFilme);
 
   posterFilme.addEventListener("click", function(evento) {
@@ -68,3 +84,14 @@ filtroSelecionado.addEventListener("change", function() {
   resultadoCalculo.textContent = `${resultado} % dos filmes do Studio Ghibli foram dirigidos por`;
   filmografia.textContent = `${nomeDiretor}`;
 });
+
+const texto = document.getElementById("textoBusca");
+const botaoBusca = document.getElementById ("botaoBusca");
+
+botaoBusca.addEventListener("click", function(){
+  const buscaInserida = buscaPorFilme (listaDeFilmes, texto.value);
+  limparTela(buscaInserida);
+});
+
+
+  

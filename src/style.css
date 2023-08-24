@@ -51,7 +51,7 @@
   }
   
   #filmografia {
-    font-family: Helvetica;
+    font-family:helvetica;
     /* padding: 1px 20px 0 0; */
     margin-top: 170px;
     margin-left: -55px;
@@ -97,6 +97,7 @@
     padding: 15px 20px;
     border-radius: 5px;
     border: none;
+		margin-right: 40px;
   }
   
   #botaoHome:hover {
@@ -105,54 +106,51 @@
   
   .ordem-filtro-container {
     display: flex;
-    align-items: flex-end;
-    justify-content: space-around;
-    /* padding: 40px 40px 0 40px; */
+		align-items: center;
+		justify-content: center;
     margin: 20px 20px 0 20px;
   }
   
   #textoBusca {
     font-family: Helvetica;
     font-size: 20px;
-    /* min-width: 150px; */
-    /* width: 80px; */
     height: 22px;
-    margin: 20px;
-    margin-right: 50px;
-    padding: 2px 2px 2px 15px;
-    flex: 1 1 100px;
+    margin-left: 20px;
+    margin-right: 5px;
+		background-color: #eaeff3;
+		border: 1px solid rgb(63, 62, 62);
   }
 
-	/* #botaoBuscar {
-    height: 22px;
-    margin: 20px;
-    margin-right: 50px;
-    padding: 2px 2px 2px 15px;
-    flex: 1 1 100px;
-		margin-top: 10px;
-	} */
+	#botaoBusca {
+		font-family: Helvetica;
+    font-size: 15px;
+    background-color: #eaeff3;
+    color: #000000;
+    padding: 3px 10px;
+    border-radius: 5px;
+		border: none;
+		border: 1px solid rgb(63, 62, 62);
+		margin-right: 300px;
+	} 
+
+	#botaoBusca:hover {
+    background-color: #c7d3dd;
+  }
   
   .ordenacao {
     font-family: Helvetica;
     font-size: 20px;
-    /* margin: 30px 0 0 500px; */
-    /* width: 80px; */
-    /* min-width: 150px; */
     height: 30px;
-    margin: 20px;
-    padding: 2px 2px 2px 15px;
-    flex: 1 1 100px;
+		background-color: #eaeff3;
   }
   
   .filtro {
     font-family: Helvetica;
     font-size: 20px;
-    /* width: 80px; */
-    /* min-width: 150px; */
     height: 30px;
     margin: 20px;
     padding: 2px 2px 2px 15px;
-    flex: 1 1 100px;
+		background-color: #eaeff3;
   }
   
   body {
@@ -167,38 +165,40 @@
     justify-content: space-around;
   }
   
-  .filme-poster {
-    margin: 70px 20px 70px 20px;
-    width: 300px;
-    height: 400px;
-    box-sizing: border-box;
-    align-items: center;
-  }
-  
-  /* .titulo-filmes {
-    margin: 40px 20px 40px 20px;
-    font-family: Armata;
-    font-size: 20px;
-  } */
+	.filmesContainer{
+		font-display: block;
+	}
 
 	.filmesContainer img{
     cursor: pointer; 
     opacity: 1;
     transition: opacity 0.3s ease-in-out; 
     border-radius: 20px;
-    border: 2px solid  #9d9fa1;
+    border: 1px solid  #9d9fa1;
 		width: 300px;
 		height: 400px;
+		margin: 70px 20px 70px 20px;
+    box-sizing: border-box;
+    align-items: center;
   }
   
   .filmesContainer img:hover {
     opacity: 0.7; 
   }
 
+	figcaption{
+		font-family: helvetica;
+		font-size: 30px;
+		margin-top: -55px;
+		border-bottom:1px solid #9d9fa1;
+		text-align: center;
+	}
+
 	dialog{
+		font-family: helvetica;
 	  font-size: 20px;
 	  width: 40%;
-		background: linear-gradient(to bottom,  #B4C2CD,  #d5e0e8);
+		background: linear-gradient(to bottom, #a7b6c0,  #d5e0e8);
 		border-radius: 5%;
 		border: 5px solid  #417777;
 	}
@@ -218,9 +218,29 @@
 		cursor: pointer;
 	}
 
+	#seta{
+    margin-left: 1250px;
+    padding: 20px;
+	}
+
 	#fechar:hover {
     background-color: #b6c6d3;
   }
+
+	#gitHub{
+		font-family: helvetica;
+		font-size: 20px;
+		margin-left: 530px;
+	}
+
+	footer{
+		background-color: #B4C2CD;
+		padding: 30px;
+	}
+
+	#burguer{
+		display: none;
+	}
 
   @media (max-width: 750px) {
 
@@ -241,7 +261,6 @@
         width: 200px;
         height: 200px;
 				margin-left: -20px;
-			
     }
 
     .home{
@@ -251,6 +270,8 @@
     #botaoHome{
         font-size: 12px;
         padding: 10px 25px;
+				margin-left: -10px;
+				margin-right: 25px;
     }
 
     .sobre{
@@ -262,27 +283,102 @@
         padding: 10px 15px;
     }
     
-     
-
+    
 			dialog{
 				font-size: 15px;
 				width: 70%;
 			}
 
 			.filmesContainer img{
-				width: 200px;
-				height: 250px;
+				width: 150px;
+				height: 200px;
+				margin: 5px 5px 20px 5px;
 			}
 
-			/* .ordem-filtro-container {
-				display: flex;
+			#gitHub{
+				font-size: 15px;
+				margin-left: 140px;
+			}
+		
+			footer{
+				background-color: #B4C2CD;
+				padding: 20px;
+				width: 100%;
+			}
+
+			
+	    #seta{
+        margin-left: 410px;
+        padding: 20px;
+	  }
+
+			.ordem-filtro-container {
+				display: none;
 				flex-direction: column;
 				align-items: center;
-			} */
+				justify-content: center;
+			} 
 
+			#textoBusca {
+				font-size: 15px;
+				display: inline-block; 
+				vertical-align: middle;
+				margin-left: 125px;
+		}
+		
+		#botaoBusca {
+				font-size: 12px;
+				padding: 2px 8px;
+				border-radius: 2px;
+				vertical-align: middle; 
+				margin-left: 190px;
+				margin-top: 5px;
+		}
+		
+		.ordenacao {
+				font-size: 15px;
+				height: 25px;
+				margin: 10px 0; 
+				padding: 2px 2px 2px 10px;
+				margin-left: 80px;
+				margin-right: 15px;
+				margin-top: 20px;
+		}
+		
+		.filtro {
+				font-size: 15px;
+				height: 25px;
+				margin: 10px 0; 
+				padding: 2px 2px 2px 10px;
+		}
+		
+
+			#burguer{
+				background-color:#d5e0e8;
+				color: #9d9fa1;
+				display: block;
+				height: 20px;
+				display: block;
+				text-align: center;
+				padding-bottom: 10px;
+			}
+
+			#burguer:hover {
+				background-color:#9d9fa1;;
+				color:#d5e0e8;
+				cursor: pointer;
+			}
+
+			
+	    figcaption{
+		  font-size: 16px;
+			margin-top: -20px;
     }
 
+	
+	}
+
   
-  
+
  
 

@@ -4,7 +4,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=, initial-scale=1.0">
   <title>Studio Ghibli</title>
-  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
   <header>
@@ -12,30 +13,31 @@
       <img class="logo" src="Imagens/totoro-peq.png" alt="logo-pequeno">
     </div>
     <div class="filmografia">
-      <h1 id="filmografia">FILMOGRAFIA</h1>
+      <h1 id="filmografia">FILMOGRAPHY</h1>
     </div>
     <div class="resultadoCalculo">
       <h2 id="resultadoCalculo"></h2>
     </div> 
     <nav class="containerCabecalho">
       <ol class="cabecalhoFilmografia">
-        <li class="sobre"><button id="botaoSobre">SOBRE</button></li>
+        <li class="sobre"><button id="botaoSobre">ABOUT</button></li>
         <li class="home"><button id="botaoHome">HOME</button></li>
       </ol>
     </nav>
   </header>
-  <nav class="ordem-filtro-container">
-    <input type="text" id="textoBusca" placeholder="Buscar filme.." />
-    <!-- <button id="botaoBusca">Buscar</button> -->
+  <i id="burguer" class="material-icons" onclick="clickMenu()">menu</i>
+  <nav class="ordem-filtro-container" id="itensMenu">
+    <input type="text" id="textoBusca" placeholder="Search movie.." />
+    <button id="botaoBusca">Search</button>
     <select id="ordenacaoSelecionada" name="Ordenação" class="ordenacao">
-      <option>Ordenar</option>
+      <option>Select order</option>
       <option class="crescente" value="1984-2023">1984-2023</option>
       <option class="decrescente" value="2023-1984">2023-1984</option>
       <option class= "alfabéticaCrescente" value="A-Z">A-Z</option>
       <option class="alfabeticaDecrescente" value="Z-A">Z-A</option>
     </select>
     <select id="filtro" name="Filtro" class="filtro">
-      <option value="Filtro">Filtrar por Diretor</option>
+      <option value="Filtro">Filter by directors</option>
       <option value="Hayao Miyazaki">Hayao Miyazaki</option>
       <option value="Isao Takahata">Isao Takahata</option>
       <option value="Yoshifumi Kondo">Yoshifumi Kondo</option>
@@ -51,13 +53,36 @@
     <p id="dataDeLancamento"></p>
     <p id="diretor"></p>
     <p id="nota"></p>
-    <button id="fechar">Fechar</button>
+    <button id="fechar">Close</button>
   </dialog>
   <main>
     <div class="filmesContainer" class="titulosFilmes"></div>
   </main>
   <div id="root"></div>
-  <script>
+
+</body>
+<a href="#"><img src="Imagens/up-arrow-5_icon-icons.com_69823 (1).png" id=seta alt="seta"></a>
+<footer>
+  <p id="gitHub">&copy; 2023 Juciele Gomes | <a href="https://github.com/JucieleGomes">GitHub</a></p>
+</footer>
+</html>
+
+<script src="main.js" type="module"></script>
+
+<script>
+
+function clickMenu() {
+  var itensMenu = document.getElementById("itensMenu");
+
+  if (itensMenu.style.display == "block") {
+    itensMenu.style.display = "none";
+  } else {
+    itensMenu.style.display = "block";
+  }
+}
+</script>
+
+<script>
     const botaoHome = document.querySelector('.home');
     botaoHome.addEventListener('click', function() {
       window.location.href = 'index.html';
@@ -68,8 +93,5 @@
       window.location.href = 'sobre.html';
     });
   </script>
-  <script src="main.js" type="module"></script>
-</body>
-<footer>
-</footer>
-</html>
+
+  
