@@ -28,15 +28,8 @@
   left: 800px;
 }
 
-.botaoBuscar {
-  width: 20%;
-  margin-top: 25px;
-  padding: 10px 20px;
-  font-size: 30px;
-  position: absolute;
-  left: 140%;
-  border: none;
-  background-color: rgb(135, 189, 189);
+.studioGhibli:hover{
+  background-color: #e8f0f7;
 }
 
 .containerBotoes {
@@ -52,6 +45,10 @@
   position: relative;
   left: 900px;
   border: none;
+  cursor: pointer;
+}
+.botaoSobre:hover {
+  background-color: #e8f0f7;
 }
 
 .botaoFilmes {
@@ -63,4 +60,62 @@
   position: relative;
   left: 900px;
   border: none;
+  cursor: pointer;
 }
+.botaoFilmes:hover {
+  background-color:  #e8f0f7;
+}
+@media (max-width: 750px) {
+
+  .container {
+    position: absolute;
+    width: 800px;
+    height: 600px;
+    display: flex;
+  }
+  
+  .imagem-fundo {
+    position: relative;
+    width: 90%;
+    height: 140%;
+    background: url("Imagens/fundo3.jpg") no-repeat center center;
+    background-size: cover;
+  }
+
+  .totoro {
+    left: -12px;
+    width: 400px;
+    height: 450px;
+    margin-top: 135px;
+    margin-left: 10px;
+
+  }
+
+  .studioGhibli {
+    position: absolute;
+    width: 250px;
+    height: 100px;
+    top: calc(100% -60px); 
+    left: 45%;
+    transform: translateX(-60%);
+  } 
+
+  .studioGhibli:hover{
+    background-color: #aacae6;
+  }
+
+  .containerBotoes {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+   } 
+  
+  .botaoSobre,
+  .botaoFilmes {
+    width: 100%; 
+    font-size: 20px;
+    margin: 5px 0;
+  } 
+
+}
+

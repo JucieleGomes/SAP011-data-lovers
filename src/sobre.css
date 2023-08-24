@@ -121,9 +121,56 @@ body {
   align-items: center; 
   padding: 40px;
   font-size: 30px;
+  margin: auto;
 }
 
 .imagem-texto-container img {
   max-width: 650px; 
   margin-right: 10px; 
+}
+
+@media (max-width: 750px) {
+
+  #sobreStudioGhibli{
+    font-size: 32px;
+    margin-left: 200px;
+  } 
+ 
+  .logo{
+      width: 200px;
+      height: 200px;
+  }
+
+  .home{
+      display: block;
+  }
+
+  #botaoHome{
+      font-size: 12px;
+      padding: 10px 25px;
+  }
+
+  .filmografia{
+      display: block;
+  }
+
+  #botaoFilmografia{
+      font-size: 12px;
+      padding: 10px 15px;
+      margin-left: -100px;
+  }
+
+  .imagem-texto-container {
+    display: block;
+    align-items: center; 
+    padding: 40px;
+    font-size: 22px;
+    margin: auto;
+  }
+  
+  .imagem-texto-container img {
+    max-width: 400px; 
+    margin-left: 50px;
+  }
+
 }

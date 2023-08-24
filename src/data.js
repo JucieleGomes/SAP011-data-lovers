@@ -1,5 +1,6 @@
 function mostrarPosterOrdenado(value, listaDeFilmes) {
   const ordenacaoSelecionada = [...listaDeFilmes];
+
   if (value === "1984-2023") {
     ordenacaoSelecionada.sort((a, b) => {
       if (a.release_date < b.release_date) {
@@ -20,7 +21,28 @@ function mostrarPosterOrdenado(value, listaDeFilmes) {
         return 0;
       }
     });
+  } else if (value === "A-Z") {
+    ordenacaoSelecionada.sort((a, b) => {
+      if (a.title < b.title) {
+        return -1;
+      } else if (a.title > b.title) {
+        return 1;
+      } else {
+        return 0;
+      }
+    });
+  } else if (value === "Z-A") {
+    ordenacaoSelecionada.sort((a, b) => {
+      if (a.title > b.title) {
+        return -1;
+      } else if (a.title < b.title) {
+        return 1;
+      } else {
+        return 0;
+      }
+    });
   }
+
   return ordenacaoSelecionada;
 }
 
