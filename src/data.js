@@ -50,6 +50,7 @@ function filtroDiretor(listaDeFilmes, filtroSelecionado) {
   return listaDeFilmes.filter(filme => filtroSelecionado === filme.director);
 }
 
+
 function calculoAgregado(listaDeFilmes, filtroAlterado) {
   const totalDeFilmes = listaDeFilmes.length;
   const totalPorDiretor = filtroAlterado.length;
@@ -60,6 +61,7 @@ function calculoAgregado(listaDeFilmes, filtroAlterado) {
 function buscaPorFilme(listaDeFilmes, texto) {
   return listaDeFilmes.filter(filme => filme.title.toLowerCase() === texto.toLowerCase());
 }
+
 
 export { mostrarPosterOrdenado, filtroDiretor, calculoAgregado,buscaPorFilme };
 

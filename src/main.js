@@ -10,30 +10,30 @@ const dataDeLancamento = document.getElementById('dataDeLancamento');
 const diretor = document.getElementById('diretor');
 const nota = document.getElementById("nota");
 
-
 // function mostraPoster(films) {
 //   let posterFilme = document.createElement("img");
 //   posterFilme.src = films.poster;
 //   posterFilme.title = films.title;
 //   posterFilme.classList.add('filme-poster');
 //   poster.appendChild(posterFilme);
+
 function mostraPoster(films) {
-  let posterFilme = document.createElement("figure"); 
+  const posterFilme = document.createElement("figure"); 
   posterFilme.classList.add('filme-container'); 
 
-  let posterImg = document.createElement("img");
+  const posterImg = document.createElement("img");
   posterImg.src = films.poster;
   posterImg.classList.add('filme-poster');
   posterFilme.appendChild(posterImg);
 
-  let titulo = document.createElement("figcaption");
+  const titulo = document.createElement("figcaption");
   titulo.textContent = films.title;
   titulo.classList.add('filme-titulo'); 
   posterFilme.appendChild(titulo);
 
   poster.appendChild(posterFilme);
 
-  posterFilme.addEventListener("click", function(evento) {
+  posterFilme.addEventListener("click", function() {
     mostrarModal(films)
     modal.showModal()
   })
@@ -89,8 +89,8 @@ const texto = document.getElementById("textoBusca");
 const botaoBusca = document.getElementById ("botaoBusca");
 
 botaoBusca.addEventListener("click", function(){
-  const buscaInserida = buscaPorFilme (listaDeFilmes, texto.value);
-  limparTela(buscaInserida);
+  const filmesEncontrados = buscaPorFilme (listaDeFilmes, texto.value);
+  limparTela(filmesEncontrados);
 });
 
 
