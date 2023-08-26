@@ -87,10 +87,17 @@ filtroSelecionado.addEventListener("change", function() {
 
 const texto = document.getElementById("textoBusca");
 const botaoBusca = document.getElementById ("botaoBusca");
+const mensagem = document.getElementById("mensagemFilme")
 
 botaoBusca.addEventListener("click", function(){
+  mensagem.innerHTML = "Filme não encontrado!";
   const filmesEncontrados = buscaPorFilme (listaDeFilmes, texto.value);
-  limparTela(filmesEncontrados);
+  if(filmesEncontrados.length>0){ 
+    return limparTela(filmesEncontrados);
+  }else{
+    return mensagem;
+  }
+
 });
 
 

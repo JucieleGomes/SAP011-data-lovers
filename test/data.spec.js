@@ -23,22 +23,14 @@ const filmes = [
   }
 ];
 
-
-
 describe('filtroDiretor', () => {
   it('is a function', () => {
     expect(typeof filtroDiretor).toBe('function');
   });
 
-
   const diretorSelecionado = 'Hayao Miyazaki';
   it('Deve retornar se o diretor selecionado é o diretor do filme', () => {
-    expect(filtroDiretor(filmes, diretorSelecionado)).toEqual([
-      filmes[0],
-      filmes[1],
-      filmes[2]
-    ]);
-    
+    expect(filtroDiretor(filmes, diretorSelecionado)).toEqual([filmes[0], filmes[1], filmes[2]]);
   });
 
   const diretorSelecionado2 = 'Isao Takahata';
@@ -46,7 +38,6 @@ describe('filtroDiretor', () => {
     expect(filtroDiretor(filmes, diretorSelecionado2)).toEqual([filmes[3]]);
   });
 });
-
 
 describe('buscaPorFilme', () => {
   it('is a function', () => {
@@ -78,7 +69,10 @@ describe('buscaPorFilme', () => {
     expect(buscaPorFilme(filmes, filmeBuscado5)).toEqual([]);
   });
 
-
+  const filmeBuscado6 = '';
+  it('Deve retornar o filme de acordo com a busca do usuário', () => {
+    expect(buscaPorFilme(filmes, filmeBuscado6)).toEqual([]);
+  });
 });
 
 describe('calculoAgregado', () => {
@@ -87,27 +81,26 @@ describe('calculoAgregado', () => {
   });
 });
 
-const filmesDiretores = ['Spirited Away', 'My Neighbor Totoro', 'Castle in the Sky','The Tale of the Princess Kaguya']
-const diretor1 = ['Spirited Away', 'My Neighbor Totoro', 'Castle in the Sky'];
-const diretor2 = ['The Tale of the Princess Kaguya'];
-const diretor3 = [];
-const diretor4 = ['The Tale of the Princess Kaguya','Spirited Away']
-
+const TotalDeFilmes = ['Spirited Away', 'My Neighbor Totoro', 'Castle in the Sky','The Tale of the Princess Kaguya'];
+const filmesDiretor1 = ['Spirited Away', 'My Neighbor Totoro', 'Castle in the Sky'];
+const filmesDiretor2 = ['The Tale of the Princess Kaguya'];
+const filmesDiretor3 = [];
+const filmesDiretor4 = ['The Tale of the Princess Kaguya','Spirited Away']; 
 
 it('Deve retornar a porcentagem de filmes do diretor', () => {
-  expect(calculoAgregado(filmesDiretores, diretor1)).toBe(75);
+  expect(calculoAgregado(TotalDeFilmes, filmesDiretor1)).toBe(75);
 });
 
 it('Deve retornar a porcentagem de filmes do diretor', () => {
-  expect(calculoAgregado(filmesDiretores, diretor2)).toBe(25)
+  expect(calculoAgregado(TotalDeFilmes, filmesDiretor2)).toBe(25)
 });
 
 it('Deve retornar a porcentagem de filmes do diretor', () => {
-  expect(calculoAgregado(filmesDiretores, diretor3)).toBe(0)
+  expect(calculoAgregado(TotalDeFilmes, filmesDiretor3)).toBe(0)
 });
 
 it('Deve retornar a porcentagem de filmes do diretor', () => {
-  expect(calculoAgregado(filmesDiretores, diretor4)).toBe(50)
+  expect(calculoAgregado(TotalDeFilmes, filmesDiretor4)).toBe(50)
 });
 
 describe('mostrarPosterOrdenado', () => {
@@ -115,3 +108,29 @@ describe('mostrarPosterOrdenado', () => {
     expect(typeof mostrarPosterOrdenado).toBe('function');
   });
 });
+
+const ordenacaoSelecionada1 = "1984-2023";
+const ordenacaoSelecionada2 = "2023-1984";
+const ordenacaoSelecionada3 = "A-Z";
+const ordenacaoSelecionada4 = "Z-A";
+
+it('Deve retornar a ordenação selecionada pelo usuário', () => {
+  const ordenacaoEsperada = [filmes[2],filmes[1],filmes[0],filmes[3]];
+  expect(mostrarPosterOrdenado(ordenacaoSelecionada1, filmes)).toEqual(ordenacaoEsperada);
+});
+
+it('Deve retornar a ordenação selecionada pelo usuário', () => {
+  const ordenacaoEsperada = [filmes[3],filmes[0],filmes[1],filmes[2]];
+  expect(mostrarPosterOrdenado(ordenacaoSelecionada2, filmes)).toEqual(ordenacaoEsperada);
+});
+
+it('Deve retornar a ordenação selecionada pelo usuário', () => {
+  const ordenacaoEsperada = [filmes[2],filmes[1],filmes[0],filmes[3]];
+  expect(mostrarPosterOrdenado(ordenacaoSelecionada3, filmes)).toEqual(ordenacaoEsperada);
+});
+
+it('Deve retornar a ordenação selecionada pelo usuário', () => {
+  const ordenacaoEsperada = [filmes[3],filmes[0],filmes[1],filmes[2]];
+  expect(mostrarPosterOrdenado(ordenacaoSelecionada4, filmes)).toEqual(ordenacaoEsperada);
+});
+
