@@ -1,4 +1,12 @@
-# Data Lovers
+# Data Lovers - Studio Ghibli
+![nuvem](https://github.com/JucieleGomes/SAP011-data-lovers/assets/127780316/02d759c0-1e2a-41bf-8375-ac7322e1cf0f)
+
+
+
+
+
+
+
 
 ## Índice
 * [1. Resumo do projeto](#1-resumo-do-projeto)
