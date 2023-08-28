@@ -1,0 +1,193 @@
+.container {
+  position: relative;
+  width: 800px;
+  height: 600px;
+  display: flex;
+}
+
+.imagem-fundo {
+  position: absolute;
+  width: 167%;
+  height: 120%;
+  background: url("Imagens/nuvem.jpg") no-repeat center center;
+  background-size: cover;
+}
+
+.totoro {
+  position: absolute;
+  left: -12px;
+  width: 660px;
+  height: 600px;
+}
+
+.studioGhibli {
+  position: absolute;
+  width: 450px;
+  height: 120px;
+  top: 470px;
+  left: 800px;
+}
+
+.studioGhibli:hover{
+  background-color: #e8f0f7;
+}
+
+.containerBotoes {
+  display: flex;
+}
+
+.botaoSobre {
+  font-family: helvetica;
+  width: 8%;
+  margin-top: 5px;
+  margin-right: 7px;
+  padding: 10px 20px;
+  font-size: 30px;
+  position: relative;
+  left: 900px;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  color: #000000;
+}
+  
+
+.botaoSobre:hover {
+  background-color:  #e8f0f7;
+  text-decoration: none;
+}
+
+.botaoFilmes {
+  font-family: helvetica;
+  width: 8%;
+  margin-top: 5px;
+  margin-right: 7px;
+  padding: 10px 20px;
+  font-size: 30px;
+  position: relative;
+  left: 900px;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  color: #000000;
+}
+.botaoFilmes:hover {
+  background-color:  #e8f0f7;
+  text-decoration: none;
+}
+@media (max-width: 750px) {
+
+  .container {
+    position: absolute;
+    width: 800px;
+    height: 600px;
+    display: flex;
+  }
+  
+  .imagem-fundo {
+    position: relative;
+    width: 90%;
+    height: 140%;
+    background: url("Imagens/fundo3.jpg") no-repeat center center;
+    background-size: cover;
+  }
+
+  .totoro {
+    left: -12px;
+    width: 400px;
+    height: 450px;
+    margin-top: 135px;
+    margin-left: 10px;
+
+  }
+
+  .studioGhibli {
+    position: absolute;
+    width: 250px;
+    height: 100px;
+    top: calc(100% -60px); 
+    left: 45%;
+    transform: translateX(-60%);
+  } 
+
+  .studioGhibli:hover{
+    background-color: #aacae6;
+  }
+
+  .containerBotoes {
+    flex-direction: row;
+    margin-left: -800px;
+   } 
+  
+  .botaoSobre,
+  .botaoFilmes {
+    width: 150px; 
+    font-size: 25px;
+    margin-top: 750px;
+    text-decoration: none;
+    }
+    
+  }  
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+  .container {
+    position: absolute;
+    width: 1000px;
+    height: 600px;
+    display: flex;
+  }
+  
+  .imagem-fundo {
+    position: relative;
+    width: 500%;
+    height: 140%;
+    background: url("Imagens/nuvem.jpg") no-repeat center center;
+    background-size: cover;
+  }
+
+  .totoro {
+    left: 20px;
+    width: 450px;
+    height: 500px;
+    margin-top: 180px;
+    margin-left: -5px;
+
+  }
+
+  .studioGhibli {
+    position: absolute;
+    width: 300px;
+    height: 135px;
+    top: 600px;
+    left: 750px;
+    transform: translateX(-60%);
+  } 
+
+  .studioGhibli:hover{
+    background-color: #aacae6;
+  }
+
+  .containerBotoes {
+    flex-direction: row;
+    margin-top: -200px; 
+    margin-left: -270px;
+   } 
+  
+  .botaoFilmes {
+    width: 150px; 
+    font-size: 25px;
+    margin-top: 750px;
+    text-decoration: none;
+  }  
+
+  .botaoSobre{
+    width: 150px; 
+    font-size: 25px;
+    margin-top: 750px;
+    text-decoration: none;
+    margin-left: -100px;
+  }
+
+}

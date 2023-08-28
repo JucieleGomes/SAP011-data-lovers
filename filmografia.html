@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=, initial-scale=1.0">
+  <title>Studio Ghibli</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img class="logo" src="Imagens/totoro-peq.png" alt="logo-pequeno">
+    </div>
+    <div class="filmografia">
+      <h1 id="filmografia">FILMOGRAPHY</h1>
+    </div>
+    <div class="resultadoCalculo">
+      <h2 id="resultadoCalculo"></h2>
+    </div> 
+    <nav class="containerCabecalho">
+      <ol class="cabecalhoFilmografia">
+        <li class="sobre"><a href="sobre.html" id="botaoSobre">ABOUT</a></li>
+        <li class="home"><a href="index.html" id="botaoHome">HOME</a></li>
+      </ol>
+    </nav>
+  </header>
+  <i id="burguer" class="material-icons" >menu</i>
+  <nav class="ordem-filtro-container" id="itensMenu">
+    <input type="text" id="textoBusca" placeholder="Search movie.." />
+    <button id="botaoBusca">Search</button>
+    <select id="ordenacaoSelecionada" name="Ordenação" class="ordenacao">
+      <option>Select order</option>
+      <option class="crescente" value="1984-2023">1984-2023</option>
+      <option class="decrescente" value="2023-1984">2023-1984</option>
+      <option class= "alfabéticaCrescente" value="A-Z">A-Z</option>
+      <option class="alfabeticaDecrescente" value="Z-A">Z-A</option>
+    </select>
+    <select id="filtro" name="Filtro" class="filtro">
+      <option value="Filtro">Filter by directors</option>
+      <option value="Hayao Miyazaki">Hayao Miyazaki</option>
+      <option value="Isao Takahata">Isao Takahata</option>
+      <option value="Yoshifumi Kondo">Yoshifumi Kondo</option>
+      <option value="Goro Miyazaki">Goro Miyazaki</option>
+      <option value="Hiromasa Yonebayashi">Hiromasa Yonebayashi</option>
+      <option value="Hiroyuki Morita">Hiroyuki Morita</option>
+    </select>
+  </nav>
+  <br>
+  <dialog>
+    <h2 id="tituloFilme"></h2>
+    <p id="sinopse"></p>
+    <p id="dataDeLancamento"></p>
+    <p id="diretor"></p>
+    <p id="nota"></p>
+    <button id="fechar">Close</button>
+  </dialog>
+  <main>
+    <div id="mensagemFilme"></div>
+    <div class="filmesContainer titulosFilmes"></div>
+  </main>
+  <div id="root"></div>
+  <script src="main.js" type="module"></script>
+  <script src="ancoras.js" type="module"></script>
+</body>
+<a href="#"><img src="Imagens/up-arrow-5_icon-icons.com_69823 (1).png" id="seta" alt="seta"></a>
+<footer>
+  <p id="gitHub">&copy; 2023 Juciele Gomes | <a href="https://github.com/JucieleGomes">GitHub</a></p>
+</footer>
+</html>
+
+
+  
