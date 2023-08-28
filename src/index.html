@@ -17,23 +17,10 @@
   </div>
   <main>
     <div class="containerBotoes">
-      <button class="botaoFilmes">Movies</button> 
-      <button class="botaoSobre">About</button>
+      <a href="filmografia.html" class="botaoFilmes">Movies</a> 
+      <a href="sobre.html" class="botaoSobre">About</a>
     </div>
   </main>
   <div id="root"></div>
-
-  <script> 
-    const botaoFilmes = document.querySelector('.botaoFilmes')
-    botaoFilmes.addEventListener('click', function() {
-      window.location.href = 'filmografia.html';
-    });
-
-    const botaoSobre = document.querySelector('.botaoSobre')
-    botaoSobre.addEventListener('click', function() {
-      window.location.href = 'sobre.html';
-    });
-  </script>
-
 </body>
 </html>

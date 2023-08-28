@@ -16,8 +16,8 @@
     </div>
     <nav class="containerCabecalho">
       <ol class="cabecalhoFilmografia">
-        <li class="filmografia"><button id="botaoFilmografia">MOVIES</button></li>
-        <li class="home"><button id="botaoHome">HOME</button></li>
+        <li class="filmografia"><a href="filmografia.html" id="botaoFilmografia">MOVIES</a></li>
+        <li class="home"><a href="index.html" id="botaoHome">HOME</a></li>
       </ol>
     </nav>
   </header>
@@ -34,16 +34,5 @@
   </main>
   <footer>
   </footer>
-  <script>
-    const botaoFilmografia = document.getElementById('botaoFilmografia');
-    botaoFilmografia.addEventListener('click', function() {
-      window.location.href = 'filmografia.html';
-    });
-
-    const botaoHome = document.getElementById('botaoHome');
-    botaoHome.addEventListener('click', function() {
-      window.location.href = 'index.html';
-    });
-  </script>
 </body>
 </html>

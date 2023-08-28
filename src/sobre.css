@@ -59,10 +59,12 @@ header {
   border-radius: 5px;
   border: none;
   margin-left: 100px;
+  text-decoration: none;
 }
 
 #botaoFilmografia:hover {
   background-color: #a6b5c1;
+  text-decoration: none;
 }
 
 .home {
@@ -81,10 +83,12 @@ header {
   border-radius: 5px;
   border: none;
   margin-right: 10px;
+  text-decoration: none;
 }
 
 #botaoHome:hover {
   background-color: #a6b5c1;
+  text-decoration: none;
 }
 
 body {
@@ -132,7 +136,7 @@ body {
 
 footer{
   background-color: #B4C2CD;
-  padding: 20px;
+  padding: 50px;
 }
 
 

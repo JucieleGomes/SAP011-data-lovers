@@ -20,12 +20,12 @@
     </div> 
     <nav class="containerCabecalho">
       <ol class="cabecalhoFilmografia">
-        <li class="sobre"><button id="botaoSobre">ABOUT</button></li>
-        <li class="home"><button id="botaoHome">HOME</button></li>
+        <li class="sobre"><a href="sobre.html" id="botaoSobre">ABOUT</a></li>
+        <li class="home"><a href="index.html" id="botaoHome">HOME</a></li>
       </ol>
     </nav>
   </header>
-  <i id="burguer" class="material-icons" onclick="clickMenu()">menu</i>
+  <i id="burguer" class="material-icons" >menu</i>
   <nav class="ordem-filtro-container" id="itensMenu">
     <input type="text" id="textoBusca" placeholder="Search movie.." />
     <button id="botaoBusca">Search</button>
@@ -60,7 +60,8 @@
     <div class="filmesContainer titulosFilmes"></div>
   </main>
   <div id="root"></div>
-
+  <script src="main.js" type="module"></script>
+  <script src="ancoras.js" type="module"></script>
 </body>
 <a href="#"><img src="Imagens/up-arrow-5_icon-icons.com_69823 (1).png" id="seta" alt="seta"></a>
 <footer>
@@ -68,31 +69,5 @@
 </footer>
 </html>
 
-<script src="main.js" type="module"></script>
-
-<script>
-
-function clickMenu() {
-  var itensMenu = document.getElementById("itensMenu");
-
-  if (itensMenu.style.display == "block") {
-    itensMenu.style.display = "none";
-  } else {
-    itensMenu.style.display = "block";
-  }
-}
-</script>
-
-<script>
-    const botaoHome = document.querySelector('.home');
-    botaoHome.addEventListener('click', function() {
-      window.location.href = 'index.html';
-    });
-
-    const botaoSobre = document.querySelector('.sobre');
-    botaoSobre.addEventListener('click', function() {
-      window.location.href = 'sobre.html';
-    });
-  </script>
 
   
