@@ -12,6 +12,7 @@
 * [9. Checklist critérios minímos de aceitação](#9-checklist-critérios-mínimos-de-aceitação)
 
 
+
 ***
 
 ## 1. Resumo do projeto
@@ -43,13 +44,13 @@ Ao fim o protótipo de alta fidelidade tornou-se navegável para ser utilizado n
 
 
 ### Mobile:
-![mobile1](https://github.com/JucieleGomes/SAP011-data-lovers/assets/127780316/3e7c9ac9-30e6-46b9-992d-1739a0744068)
+![redme 3 2jog](https://github.com/JucieleGomes/SAP011-data-lovers/assets/127780316/6ec2acdb-b759-44cd-8dd0-dfc9583562cc)
 
-![mobile2](https://github.com/JucieleGomes/SAP011-data-lovers/assets/127780316/01f5d376-cbf3-487f-a30b-49107ec22a80)
 
 
 ### Desktop:
-![Prototipo1REDME](https://github.com/JucieleGomes/SAP011-data-lovers/assets/127780316/fc27badf-0442-47c1-9b33-1f188447f493)
+![REDME 1](https://github.com/JucieleGomes/SAP011-data-lovers/assets/127780316/b9806fc6-e319-4571-b31b-e011c3d2c78b)
+
 
 
 
@@ -73,7 +74,8 @@ As alterações sugeridas foram as seguintes:
  6. Adicionar campo de busca.
 
 ## Protótipo alterada após teste de usabilidade: 
-![Protótipo2 REDME](https://github.com/JucieleGomes/SAP011-data-lovers/assets/127780316/9e127a81-5d14-4e6b-b89a-c5e2bcd089c0)
+![REDME 2](https://github.com/JucieleGomes/SAP011-data-lovers/assets/127780316/c3b31477-929e-4a7a-bbbb-0330610ef60a)
+
 
 
 ## 5. Funcionalidades
@@ -110,6 +112,9 @@ Foram realizados testes unitários e todas as funções do arquivo data.js são 
 * [Visual Studio Code](https://code.visualstudio.com/)
 * [Figma](https://www.figma.com/login)
 * [Trello](https://trello.com/pt-BR/login)
+* HTML
+* CSS
+* JAVA SCRIPT
 
 ## 9. Checklist critérios minímos de aceitação
 
