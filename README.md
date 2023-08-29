@@ -1,4 +1,12 @@
-# Data Lovers
+# Data Lovers - Studio Ghibli
+![nuvem](https://github.com/JucieleGomes/SAP011-data-lovers/assets/127780316/02d759c0-1e2a-41bf-8375-ac7322e1cf0f)
+
+
+
+
+
+
+
 
 ## Índice
 * [1. Resumo do projeto](#1-resumo-do-projeto)
@@ -15,7 +23,7 @@
 
 ***
 
-## 1. Resumo do projeto
+## 📗 1. Resumo do projeto
 
 O projeto Data Lovers é p segundo projeto do Bootcamp Laboratória da turma SAP011, este projeto tem como principal objetivo a aprendizagem
 de manipulação de dados. Dados estes que foram previamente disponibilizado no repositório da Laboratória. Para o projeto foi escolhida a temática 
@@ -27,7 +35,7 @@ Para auxiliar no desenvolvimento do projeto foi criada uma história do usuário
 na realização do teste usabilidade, onde após o feedback foram feitas alterações para melhor atender as necessidades dos usários.
 
 
-## 2. História do usuário
+## 🧑‍🤝‍🧑 2. História do usuário
 
 Para a história do usuário foi pensado cm relação ao tema como essa aplicação atender as demandas e necessidades do público fãs e 
 consumidores do conteúdo do Studio Ghibli. 
@@ -35,7 +43,7 @@ consumidores do conteúdo do Studio Ghibli.
 História do usuário: Para fãs do Studio Ghibli onde possam acessar a galeria de filmes do studio, ver informações relevantes sobre os filmes,
 realizar filtros e buscas na página de acordo com seu interesse.
 
-## 3. Protótipo
+## 🖼️ 3. Protótipo
 Após finalizar a história do usuário foi feita a etapa de prototipação, onde foram criados protótipos de alta fidelidade tanto para
 versão desktop quanto mobile, pensando em um design responsivo. Na criação do protótipo foi escolhida a paleta de cores, imagens e logo
 que seriam utilizados, trazendo para o projeto uma identidade visual que remetesse ao Studio Ghibli e seu universo cinematográfico. 
@@ -55,7 +63,7 @@ Ao fim o protótipo de alta fidelidade tornou-se navegável para ser utilizado n
 
 
 
-## 4. Teste de usabilidade
+## 🧑‍💻 4. Teste de usabilidade
 Após a criação do protótipo de alta fidelidade foi realizado um teste de usabilidade com 4 usuárias, com o objetivo de
 verificar se o protótipo seria de navegação intuitiva e atenderia as fincionalidades esperadas.
 Durante o teste, enviamos o link de navegação e foi proposto as usuárias que navegassem pelas páginas,
@@ -78,7 +86,7 @@ As alterações sugeridas foram as seguintes:
 
 
 
-## 5. Funcionalidades
+## 📚 5. Funcionalidades
 
 Após o teste usabilidade, foi obervado que a navegação estava boa e intuitiva, os filtros e ordenação que haviam sido
 idealiado suprima a necessidades dos usuários, ficou definido que a implementacia inciaria pelos critérios mínimos de 
@@ -98,12 +106,12 @@ especifico, e quando clica no poster do filme é mostrado um modal na tela onde 
 diretor e nota. Ainda nesta página o usuário consegue retornar para a tela incial ou ir para a tela de sobre o Studio Ghibli.
 3. Sobre o Studio Ghibli onfr contém uma breve resumo sobre a história do Studio Ghibli e nesta tela o usuário também pode navegar novamente para a página de filmes ou página incial.
 
-## 6. Link do projeto 
+## 🔗 6. Link do projeto 
 
-## 7. Testes unitários
+## ✅ 7. Testes unitários
 Foram realizados testes unitários e todas as funções do arquivo data.js são cobertas por testes.
 
-## 8. Ferramentas e tecnologias utilizadas
+## 🔨 8. Ferramentas e tecnologias utilizadas
 * [Git](https://git-scm.com/)
 * [GitHub](https://github.com/)
 * [GitHub Pages](https://pages.github.com/)
@@ -116,7 +124,7 @@ Foram realizados testes unitários e todas as funções do arquivo data.js são 
 * CSS
 * JAVA SCRIPT
 
-## 9. Checklist critérios minímos de aceitação
+## 🗹 9. Checklist critérios minímos de aceitação
 
 - [x]  Usar VanillaJS.
 - [x]  Passa pelo linter (`npm run pretest`)
