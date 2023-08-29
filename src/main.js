@@ -83,6 +83,7 @@ filtroSelecionado.addEventListener("change", function() {
   const nomeDiretor = filtroSelecionado.value;
   resultadoCalculo.textContent = `${resultado} % dos filmes do Studio Ghibli foram dirigidos por`;
   filmografia.textContent = `${nomeDiretor}`;
+  limparTela(filtroAlterado);
 });
 
 const texto = document.getElementById("textoBusca");
