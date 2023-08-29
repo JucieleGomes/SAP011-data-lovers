@@ -182,8 +182,9 @@ footer{
   
   .imagem-texto-container img {
     max-width: 300px; 
-    margin-left: 20px;
-    /* content: url("Imagens/imagemsobre2-removebg-preview.png");  */
+    height: 300px;
+    margin-left: 45px;
+    content: url("Imagens/sobre2.png"); 
   }
 
   footer{
