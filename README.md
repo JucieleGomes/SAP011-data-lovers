@@ -107,6 +107,7 @@ diretor e nota. Ainda nesta página o usuário consegue retornar para a tela inc
 3. Sobre o Studio Ghibli onfr contém uma breve resumo sobre a história do Studio Ghibli e nesta tela o usuário também pode navegar novamente para a página de filmes ou página incial.
 
 ## 🔗 6. Link do projeto 
+https://jucielegomes.github.io/SAP011-data-lovers/index.html
 
 ## ✅ 7. Testes unitários
 Foram realizados testes unitários e todas as funções do arquivo data.js são cobertas por testes.
