@@ -81,7 +81,7 @@ As alterações sugeridas foram as seguintes:
  5. Tornar a imagem do filme clicável quando estiver na página do diretor;
  6. Adicionar campo de busca.
 
-## Protótipo alterada após teste de usabilidade: 
+## Protótipo alterado após teste de usabilidade: 
 ![REDME 2](https://github.com/JucieleGomes/SAP011-data-lovers/assets/127780316/c3b31477-929e-4a7a-bbbb-0330610ef60a)
 
 
