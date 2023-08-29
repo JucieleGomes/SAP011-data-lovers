@@ -177,11 +177,14 @@ footer{
     padding: 40px;
     font-size: 22px;
     margin: auto;
+    font-size: 18px;
   }
   
   .imagem-texto-container img {
-    max-width: 400px; 
-    margin-left: 10px;
+    max-width: 300px; 
+    height: 300px;
+    margin-left: 45px;
+    content: url("Imagens/sobre2.png"); 
   }
 
   footer{
@@ -192,3 +195,16 @@ footer{
 
 }
 
+@media (min-width: 768px) and (max-width: 1024px) {
+
+  
+  .imagem-texto-container {
+    font-size: 25px;
+  }
+
+  .imagem-texto-container img {
+    max-width: 400px; 
+    margin-left: 20px;
+    content: url("Imagens/imagemsobre2-removebg-preview.png"); 
+  }
+}
