@@ -83,7 +83,7 @@ filtroSelecionado.addEventListener("change", function() {
   const nomeDiretor = filtroSelecionado.value;
   resultadoCalculo.textContent = `${resultado} % dos filmes do Studio Ghibli foram dirigidos por`;
   filmografia.textContent = `${nomeDiretor}`;
-  limparTela(filtroAlterado);
+    limparTela(filtroAlterado);
 });
 
 const texto = document.getElementById("textoBusca");
@@ -94,9 +94,11 @@ botaoBusca.addEventListener("click", function(){
   mensagem.innerHTML = "Filme não encontrado!";
   const filmesEncontrados = buscaPorFilme (listaDeFilmes, texto.value);
   if(filmesEncontrados.length>0){ 
-    return limparTela(filmesEncontrados);
+    limparTela(filmesEncontrados);
+    mensagem.textContent = "";
   }else{
-    return mensagem;
+    mensagem.textContent = "Filme não encontrado!"
+    limparTela([]);
   }
 
 });
